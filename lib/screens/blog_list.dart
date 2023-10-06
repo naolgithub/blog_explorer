@@ -240,11 +240,11 @@ class _BlogListState extends State<BlogList> {
               future: blogRepository.getBlogs(),
             );
           }
-          // if (state is BlogErrorState) {
-          //   return const Center(
-          //     child: Text("Error"),
-          //   );
-          // }
+          if (state is BlogErrorState) {
+            return const Center(
+              child: Text("Error"),
+            );
+          }
 
           return Container();
         },
