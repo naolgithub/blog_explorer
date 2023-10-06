@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 @immutable
 abstract class BlogState extends Equatable {}
 
-//data loading state
 class BlogLoadingState extends BlogState {
   @override
   List<Object?> get props => [];
@@ -24,9 +23,3 @@ class BlogErrorState extends BlogState {
   @override
   List<Object?> get props => [error];
 }
-
-
-//data loaded state
-
-
-//data loading error state
